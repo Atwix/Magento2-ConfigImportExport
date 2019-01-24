@@ -104,6 +104,35 @@ Options:
 
 The files are written to the **var** directory of your Magento installation.
 
+#### Yaml File Format
+
+```
+# Default scope
+web/unsecure/base_url:
+  default:
+    0: 'http://example.com/my-base-url/'
+
+# Store view scope -> "Example Store-ID 1"
+web/unsecure/base_url:    
+  stores:
+    1: 'http://example.com/my-base-url/'  
+
+# Store view scope -> "Example with store-view code"
+web/unsecure/base_url:    
+  stores:
+    my_store_code: 'http://example.com/another-base-url/'  
+
+# Delete entry    
+web/unsecure/base_url:    
+  stores:
+    my_store_code: !!delete
+
+# Run n98-magerun commands
+commands/run:
+  - sys:store:list
+  - db:query "select * from sales_flat_order"
+```
+
 
 ## Support
 
