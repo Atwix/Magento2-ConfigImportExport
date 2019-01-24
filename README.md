@@ -21,8 +21,8 @@ php bin/magento module:enable Semaio_ConfigImportExport
 ## Facts
 
 * Version: 3.0.0
-* Magento Support: >= 2.2
-* PHP Versions: 7.0 + 7.1
+* Magento Support: >= 2.3
+* PHP Versions: 7.0 + 7.1 + 7.2
 
 ## Functionality
 
