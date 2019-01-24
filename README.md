@@ -106,7 +106,7 @@ The files are written to the **var** directory of your Magento installation.
 
 #### Yaml File Format
 
-```
+```yaml
 # Default scope
 web/unsecure/base_url:
   default:
